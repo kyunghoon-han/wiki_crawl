@@ -1,5 +1,5 @@
 # wiki_crawl
-Some wikipedia crawling module
+Some wikipedia crawling module. Run `bash take_wikis.sh` to take the Korea article data from Wikipedia to ignore the problems.
 
 ## list_titles.py
 `list_titles.py` produces a txt file of Wikipedia article ID, title pairs. 
