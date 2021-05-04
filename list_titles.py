@@ -43,9 +43,11 @@ for each_page in pages_in_query:
 num_queries = 1
 
 while len(page_list['query']['allpages'])>0:
-    request_obj['apcontinue'] = page_list["continue"]["apcontinue"]
-    page_list = wiki.call(request_obj)
-
+    try:
+        request_obj['apcontinue'] = page_list["continue"]["apcontinue"]
+        page_list = wiki.call(request_obj)
+    except KeyError:
+        continue
     pages_in_query = page_list['query']['allpages']
 
     for each_page in pages_in_query:

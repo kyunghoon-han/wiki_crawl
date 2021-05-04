@@ -9,3 +9,11 @@ The file takes two terminal arguments:
 2. `--filename` or `-f`: output filename (default: `list_titles.txt`)
 
 ## wiki_crawl.py
+`wiki_crawl.py` outputs a number of different text files to a designated output directory. The texts are taken from Wikipedia pages of title listed in an input list of titles (default: `list_titles.txt`).
+The file takes three terminal arguments:
+1. `--language` or `-l`: language code (as of above)
+2. `--output` or `-o`: base output filename (if it's defined to be `./data/ko_article_`, as of the default case, a page of title "Python" would be saved as `./data/ko_article_Python.txt`)
+3. `--input` or `-i`: the output of `list_titles.py`
+
+## take_wikis.sh
+Run both of the python files above.
